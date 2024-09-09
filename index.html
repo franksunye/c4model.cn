@@ -18,32 +18,32 @@
     <div id="content">
         <div id="header">
             <div class="container">
-                <h1>The C4 model for visualising software architecture</h1>
-                <h2>Context, Containers, Components, and Code</h2>
+                <h1>用于可视化软件架构的 C4 模型</h1>
+                <h2>上下文(Context), 容器(Containers), 组件(Components), 和代码(Code)</h2>
             </div>
         </div>
 
         <div id="navigation">
             <div class="primaryNavigation">
-                <a href="#SystemContextDiagram">1. System context diagram</a>
-                <a href="#ContainerDiagram">2. Container diagram</a>
-                <a href="#ComponentDiagram">3. Component diagram</a>
-                <a href="#CodeDiagram">4. Code diagram</a>
+                <a href="#SystemContextDiagram">1. 系统上下文图</a>
+                <a href="#ContainerDiagram">2. 容器图</a>
+                <a href="#ComponentDiagram">3. 组件图</a>
+                <a href="#CodeDiagram">4. 代码图</a>
             </div>
             <div class="secondaryNavigation">
-                <a href="#SystemLandscapeDiagram">System landscape diagram</a>
-                <a href="#DynamicDiagram">Dynamic diagram</a>
-                <a href="#DeploymentDiagram">Deployment diagram</a>
+                <a href="#SystemLandscapeDiagram">系统景观图</a>
+                <a href="#DynamicDiagram">动态图</a>
+                <a href="#DeploymentDiagram">部署图</a>
                 <br />
-                <a href="#Abstractions">Abstractions</a>
-                <a href="#Notation">Notation</a>
-                <a href="#Tooling">Tooling</a>
-                <a href="#FAQ">FAQ</a>
-                <a href="https://architectis.je">Training</a>
-                <a href="review">Diagram review checklist</a>
-                <a href="bingo">Diagram bingo</a>
+                <a href="#Abstractions">抽象</a>
+                <a href="#Notation">符号</a>
+                <a href="#Tooling">工具</a>
+                <a href="#FAQ">常见问题</a>
+                <a href="https://architectis.je">培训</a>
+                <a href="review">图表审查清单</a>
+                <a href="bingo">图表宾果</a>
             </div>
-        </div>    
+        </div>            
     
         <br /><br />
 
@@ -52,26 +52,25 @@
                 <div class="row">
                     <div class="col-sm-6 centered">
                         <br />
-
+        
                         <div>
-                            The C4 model is...
+                            C4 模型是...
                             <p class="small">
-                                1. A set of hierarchical abstractions (software systems, containers, components, and code).<br />
-                                2. A set of hierarchical diagrams (system context, containers, components, and code).<br />
-                                3. Notation independent.<br />
-                                4. Tooling independent.<br />
+                                1. 一组层次化的抽象（软件系统、容器、组件和代码）。<br />
+                                2. 一组层次化的图表（系统上下文、容器、组件和代码）。<br />
+                                3. 与符号无关。<br />
+                                4. 与工具无关。<br />
                             </p>
                         </div>       
-
+        
                         <br />
-
+        
                         <div>
-                            Uses and benefits
+                            用途与优势
                             <p class="small">
-                                The C4 model is an easy to learn, developer friendly approach to software architecture diagramming.
-                                Good software architecture diagrams assist with communication inside/outside of software development/product teams,
-                                efficient onboarding of new staff, architecture reviews/evaluations, risk identification (e.g. <a href="https://riskstorming.com" target="_blank">risk-storming</a>),
-                                threat modelling, etc.
+                                C4 模型是一种易于学习、开发者友好的软件架构绘图方法。
+                                优秀的软件架构图有助于软件开发/产品团队内外的沟通、快速引导新员工上岗、架构评审/评估、风险识别（例如 <a href="https://riskstorming.com" target="_blank">风险风暴</a>）、
+                                威胁建模等。
                             </p>
                         </div>
                     </div>
@@ -83,78 +82,78 @@
                 </div>    
             </div>
         </div>
-
+        
         <div class="section">
             <div class="container">
                 <a name="Introduction"></a>
-                <h2>Introduction</h2>
+                <h2>简介</h2>
                 <p>
-                    Ask somebody in the building industry to visually communicate the architecture of a building and you'll be presented with site plans, floor plans, elevation views, cross-section views and detail drawings.
-                    In contrast, ask a software developer to communicate the software architecture of a software system using diagrams and you'll likely get a confused mess of boxes and lines ...
-                    inconsistent notation (colour coding, shapes, line styles, etc), ambiguous naming, unlabelled relationships, generic terminology, missing technology choices, mixed abstractions, etc.
+                    如果你请建筑行业的人通过视觉方式传达一栋建筑的架构，你会看到的是场地平面图、楼层平面图、立面图、剖面图和细节图。
+                    相比之下，如果你请一个软件开发人员使用图表传达软件系统的架构，你很可能会得到一个混乱的方框和线条的集合……
+                    不一致的符号（颜色编码、形状、线条样式等），模糊的命名，未标记的关系，通用的术语，缺失的技术选择，混合的抽象层次等。
                 </p>
-
+        
                 <div class="row">
                     <div class="col-sm-3 centered">
                         <p>
-                            <a href="https://c4model.com/bingo/?diagram=../img/sketch-1.jpg"><img src="https://c4model.com/img/sketch-1.jpg" alt="A software architecture sketch" class="img-thumbnail" /></a>
+                            <a href="https://c4model.com/bingo/?diagram=../img/sketch-1.jpg"><img src="https://c4model.com/img/sketch-1.jpg" alt="一个软件架构草图" class="img-thumbnail" /></a>
                         </p>
                     </div>
                     <div class="col-sm-3 centered">
                         <p>
-                            <a href="https://c4model.com/bingo?diagram=../img/sketch-2.jpg"><img src="https://c4model.com/img/sketch-2.jpg" alt="A software architecture sketch" class="img-thumbnail" /></a>
+                            <a href="https://c4model.com/bingo?diagram=../img/sketch-2.jpg"><img src="https://c4model.com/img/sketch-2.jpg" alt="一个软件架构草图" class="img-thumbnail" /></a>
                         </p>
                     </div>
                     <div class="col-sm-3 centered">
                         <p>
-                            <a href="https://c4model.com/bingo?diagram=../img/sketch-3.jpg"><img src="https://c4model.com/img/sketch-3.jpg" alt="A software architecture sketch" class="img-thumbnail" /></a>
+                            <a href="https://c4model.com/bingo?diagram=../img/sketch-3.jpg"><img src="https://c4model.com/img/sketch-3.jpg" alt="一个软件架构草图" class="img-thumbnail" /></a>
                         </p>
                     </div>
                     <div class="col-sm-3 centered">
                         <p>
-                            <a href="https://c4model.com/bingo?diagram=../img/sketch-4.jpg"><img src="https://c4model.com/img/sketch-4.jpg" alt="A software architecture sketch" class="img-thumbnail" /></a>
+                            <a href="https://c4model.com/bingo?diagram=../img/sketch-4.jpg"><img src="https://c4model.com/img/sketch-4.jpg" alt="一个软件架构草图" class="img-thumbnail" /></a>
                         </p>
                     </div>
                 </div>
-
+        
                 <p>
-                    As an industry, we do have the Unified Modeling Language (UML), ArchiMate and SysML,
-                    but asking whether these provide an effective way to communicate software architecture is often irrelevant because many teams have already thrown them out in favour of much simpler "boxes and lines" diagrams.
-                    Abandoning these modelling languages is one thing but, perhaps in the race for agility, many software development teams have lost the ability to communicate visually.
+                    在我们这个行业中，虽然我们有统一建模语言（UML）、ArchiMate 和 SysML，
+                    但这些是否能够有效地传达软件架构往往是个无关紧要的问题，因为许多团队已经抛弃了它们，转而使用更简单的“方框和线条”图。
+                    放弃这些建模语言是一回事，但或许在追求敏捷的过程中，许多软件开发团队已经失去了视觉传达能力。
                 </p>
-
+        
                 <br /><br />
-
-                <h3>Maps of your code</h3>
+        
+                <h3>代码的地图</h3>
                 <p>
-                    The C4 model was created as a way to help software development teams describe and communicate software architecture, both during up-front design sessions and when retrospectively documenting an existing codebase.
-                    It's a way to create maps of your code, at various levels of detail, in the same way you would use something like Google Maps to zoom in and out of an area you are interested in. 
+                    C4 模型的创建是为了帮助软件开发团队在前期设计会话中以及在回顾现有代码库时描述和传达软件架构。
+                    这是一种创建代码地图的方式，可以在不同的细节层次上，就像使用 Google 地图一样，可以放大和缩小你感兴趣的区域。
                 </p>
-
+        
                 <br />
-
+        
                 <div class="row">
                     <div class="col-sm-3">
-                        <img src="https://c4model.com/img/map-4.jpg" alt="Google Maps" class="img-thumbnail" />
+                        <img src="https://c4model.com/img/map-4.jpg" alt="Google 地图" class="img-thumbnail" />
                     </div>
                     <div class="col-sm-3">
-                        <img src="https://c4model.com/img/map-3.jpg" alt="Google Maps" class="img-thumbnail" />
+                        <img src="https://c4model.com/img/map-3.jpg" alt="Google 地图" class="img-thumbnail" />
                     </div>
                     <div class="col-sm-3">
-                        <img src="https://c4model.com/img/map-2.jpg" alt="Google Maps" class="img-thumbnail" />
+                        <img src="https://c4model.com/img/map-2.jpg" alt="Google 地图" class="img-thumbnail" />
                     </div>
                     <div class="col-sm-3">
-                        <img src="https://c4model.com/img/map-1.jpg" alt="Google Street View" class="img-thumbnail" />
+                        <img src="https://c4model.com/img/map-1.jpg" alt="Google 街景" class="img-thumbnail" />
                     </div>
                 </div>
-
+        
                 <div class="row">
                     <div class="col-sm-3 centered">
                         <p>
                             <a href="https://static.structurizr.com/workspace/36141/diagrams/SystemContext.png"><img src="https://static.structurizr.com/workspace/36141/diagrams/SystemContext.png" class="img-thumbnail"  /></a>
                         </p>
                         <p class="smaller">
-                            Level 1: A <b>System Context</b> diagram provides a starting point, showing how the software system in scope fits into the world around it.
+                            第 1 级：<b>系统上下文</b>图提供了一个起点，展示了处于讨论范围内的软件系统如何融入其周围的世界。
                         </p>
                     </div>
                     <div class="col-sm-3 centered">
@@ -162,7 +161,7 @@
                             <a href="https://static.structurizr.com/workspace/36141/diagrams/Containers.png"><img src="https://static.structurizr.com/workspace/36141/diagrams/Containers.png" class="img-thumbnail"  /></a>
                         </p>
                         <p class="smaller">
-                            Level 2: A <b>Container</b> diagram zooms into the software system in scope, showing the high-level technical building blocks.
+                            第 2 级：<b>容器</b>图放大了讨论范围内的软件系统，展示了高层次的技术构建块。
                         </p>
                     </div>
                     <div class="col-sm-3 centered">
@@ -170,7 +169,7 @@
                             <a href="https://static.structurizr.com/workspace/36141/diagrams/Components.png"><img src="https://static.structurizr.com/workspace/36141/diagrams/Components.png" class="img-thumbnail"  /></a>
                         </p>
                         <p class="smaller">
-                            Level 3: A <b>Component</b> diagram zooms into an individual container, showing the components inside it.
+                            第 3 级：<b>组件</b>图放大了一个单独的容器，展示了其内部的组件。
                         </p>
                     </div>
                     <div class="col-sm-3 centered">
@@ -178,33 +177,32 @@
                             <img src="https://c4model.com/img/class-diagram.png" class="img-thumbnail grayscale"  />
                         </p>
                         <p class="smaller">
-                            Level 4: A <b>code</b> (e.g. UML class) diagram can be used to zoom into an individual component, showing how that component is implemented.
+                            第 4 级：<b>代码</b>图（如 UML 类图）可用于放大单个组件，展示该组件是如何实现的。
                         </p>
                     </div>
                 </div>
-
+        
                 <br /><br />
-
+        
                 <p>
-                    The C4 model is an "abstraction-first" approach to diagramming software architecture, based upon abstractions that reflect how
-                    software architects and developers think about and build software. The small set of abstractions and diagram types makes the C4 model
-                    easy to learn and use.
-                    Please note that you don't need to use all 4 levels of diagram; only those that add value - the System Context and Container diagrams are sufficient for many software development teams.
+                    C4 模型是一种“抽象优先”的软件架构图绘制方法，它基于反映软件架构师和开发人员如何思考和构建软件的抽象。
+                    这一小组抽象和图表类型使得 C4 模型易于学习和使用。
+                    请注意，你不需要使用所有 4 个级别的图表；只需使用那些能够增加价值的图表——系统上下文图和容器图对于许多软件开发团队来说已经足够了。
                 </p>
-
+        
                 <br />
-
+        
                 <div class="row">
                     <div class="col-sm-6">
-                        <a href="https://c4model.com/img/c4-overview.png"><img src="https://c4model.com/img/c4-overview.png" alt="An overview of the C4 model" class="img-thumbnail" /></a>
+                        <a href="https://c4model.com/img/c4-overview.png"><img src="https://c4model.com/img/c4-overview.png" alt="C4 模型概览" class="img-thumbnail" /></a>
                         <p class="mapCaption">
-                            Different levels of zoom allow you to tell different stories to different audiences.
+                            不同的放大级别可以让你对不同的受众讲述不同的故事。
                         </p>
                     </div>
                     <div class="col-sm-6 centered">
                         <iframe id="myEmbeddedDiagram" class="thumbnail" src="https://structurizr.com/embed/36141?diagram=SystemContext&diagramSelector=false&iframe=myEmbeddedDiagram" width="100%" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
                         <p class="mapCaption">
-                            Hover your mouse over the diagram, find elements with a <img src="img/zoom-in.svg" width="10px" />, and double-click to zoom-in.
+                            将鼠标悬停在图表上，找到带有 <img src="https://c4model.com/img/zoom-in.svg" width="10px" /> 的元素，并双击以放大。
                         </p>
                     </div>
                 </div>                
@@ -214,453 +212,437 @@
         <div class="section">
             <div class="container">
                 <a name="Abstractions"></a>
-                <h2>Abstractions</h2>
+                <h2>抽象</h2>
                 <p>
-                    In order to create these maps of your code, we first need a common set of abstractions to create a ubiquitous language that we can use to describe the static structure of a software system.
-                    A <b>software system</b> is made up of one or more <b>containers</b> (applications and data stores),
-                    each of which contains one or more <b>components</b>,
-                    which in turn are implemented by one or more <b>code elements</b> (classes, interfaces, objects, functions, etc).
-                    And <b>people</b> may use the software systems that we build.
+                    为了创建这些代码地图，我们首先需要一组共同的抽象概念，以创建一个通用的语言，用于描述软件系统的静态结构。
+                    <b>软件系统</b> 由一个或多个 <b>容器</b>（应用程序和数据存储）组成，
+                    每个容器包含一个或多个 <b>组件</b>，
+                    这些组件又由一个或多个 <b>代码元素</b>（类、接口、对象、函数等）实现。
+                    并且 <b>人员</b> 可能会使用我们构建的软件系统。
                 </p>
-
+        
                 <br />
-
+        
                 <p class="centered" style="width: 60%; margin-left: auto; margin-right: auto">
                     <a href="https://c4model.com/img/abstractions.png"><img src="https://c4model.com/img/abstractions.png" alt="Abstractions" class="img-thumbnail" /></a>
                 </p>
                 <p class="caption">
                 </p>
-
+        
                 <br /><br />
-
-                <h3>Person</h3>
+        
+                <h3>人员</h3>
                 <p>
-                    A person represents one of the human users of your software system (e.g. actors, roles, personas, etc).
+                    人员代表你软件系统的一个人类用户（例如，演员、角色、人物角色等）。
                 </p>
-
+        
                 <br />
-
-                <h3>Software System</h3>
+        
+                <h3>软件系统</h3>
                 <p>
-                    A software system is the highest level of abstraction and describes something that delivers value to its users, whether they are human or not.
-                    This includes the software system you are modelling, and the other software systems upon which your software system depends (or vice versa).
+                    软件系统是最高层次的抽象，描述了向其用户（无论是人类还是其他系统）提供价值的事物。
+                    这包括你正在建模的软件系统，以及你的软件系统依赖的其他软件系统（或反之亦然）。
                 </p>
-
+        
                 <p>
-                    Unfortunately the term "software system" is the hardest of the C4 model abstractions to define,
-                    and this isn't helped by the fact that each organisation will also have their own terminology for describing the same thing, typically using terms such as "application", "product", "service", etc.
-                    One way to think about it is that a software system is something a single software development team is building, owns, has responsibility for, and can see the internal implementation details of.
-                    Perhaps the code for that software system resides in a single source code repository, and anybody on the team is entitled to modify it.
-                    In many cases, the boundary of a software system will correspond to the boundary of a single team.
-                    It may also be the case that everything inside the boundary of a software system is deployed at the same time.
+                    不幸的是，“软件系统” 这个术语是 C4 模型中最难定义的抽象之一，这种情况也因为每个组织有自己描述同一事物的术语（通常使用“应用程序”、“产品”、“服务”等）而没有得到改善。
+                    一种理解方式是，软件系统是一个单一的软件开发团队正在构建、拥有、负责，并能看到其内部实现细节的事物。
+                    也许这个软件系统的代码位于一个源代码仓库中，并且团队中的任何人都可以修改它。
+                    在许多情况下，软件系统的边界将对应于一个单一团队的边界。
+                    也可能是软件系统边界内的所有内容会同时部署。
                 </p>
-
+        
                 <br />
-
-                <h3>Container <span class="smaller">(applications and data stores)</span></h3>
-                <p >
-                    Not Docker! In the C4 model, a container represents an <b>application</b> or a <b>data store</b>. A container is something that needs to
-                    be running in order for the overall software system to work. In real terms, a container is something like:
+        
+                <h3>容器 <span class="smaller">(应用程序和数据存储)</span></h3>
+                <p>
+                    不是 Docker！在 C4 模型中，容器代表一个 <b>应用程序</b> 或 <b>数据存储</b>。一个容器是指在整体软件系统运行时需要运行的事物。在实际中，容器可以是：
                 </p>
                 
                 <ul>
-                    <li><b>Server-side web application</b>: A Java EE web application running on Apache Tomcat, an ASP.NET MVC application running on Microsoft IIS, a Ruby on Rails application running on WEBrick, a Node.js application, etc.</li>
-                    <li><b>Client-side web application</b>: A JavaScript application running in a web browser using Angular, Backbone.JS, jQuery, etc.</li>
-                    <li><b>Client-side desktop application</b>: A Windows desktop application written using WPF, an OS X desktop application written using Objective-C, a cross-platform desktop application written using JavaFX, etc.</li>
-                    <li><b>Mobile app</b>: An Apple iOS app, an Android app, a Microsoft Windows Phone app, etc.</li>
-                    <li><b>Server-side console application</b>: A standalone (e.g. "public static void main") application, a batch process, etc.</li>
-                    <li><b>Serverless function</b>: A single serverless function (e.g. Amazon Lambda, Azure Function, etc).</li>
-                    <li><b>Database</b>: A schema or database in a relational database management system, document store, graph database, etc such as MySQL, Microsoft SQL Server, Oracle Database, MongoDB, Riak, Cassandra, Neo4j, etc.</li>
-                    <li><b>Blob or content store</b>: A blob store (e.g. Amazon S3, Microsoft Azure Blob Storage, etc) or content delivery network (e.g. Akamai, Amazon CloudFront, etc).</li>
-                    <li><b>File system</b>: A full local file system or a portion of a larger networked file system (e.g. SAN, NAS, etc).</li>
-                    <li><b>Shell script</b>: A single shell script written in Bash, etc.</li>
-                    <li><b>etc</b></li>
+                    <li><b>服务器端 Web 应用程序</b>：一个在 Apache Tomcat 上运行的 Java EE Web 应用程序，一个在 Microsoft IIS 上运行的 ASP.NET MVC 应用程序，一个在 WEBrick 上运行的 Ruby on Rails 应用程序，一个 Node.js 应用程序等。</li>
+                    <li><b>客户端 Web 应用程序</b>：一个在浏览器中运行的 JavaScript 应用程序，使用 Angular、Backbone.JS、jQuery 等。</li>
+                    <li><b>客户端桌面应用程序</b>：一个使用 WPF 编写的 Windows 桌面应用程序，一个使用 Objective-C 编写的 OS X 桌面应用程序，一个使用 JavaFX 编写的跨平台桌面应用程序等。</li>
+                    <li><b>移动应用程序</b>：一个 Apple iOS 应用程序，一个 Android 应用程序，一个 Microsoft Windows Phone 应用程序等。</li>
+                    <li><b>服务器端控制台应用程序</b>：一个独立的（例如“public static void main”）应用程序，一个批处理过程等。</li>
+                    <li><b>无服务器函数</b>：一个单独的无服务器函数（例如 Amazon Lambda、Azure Function 等）。</li>
+                    <li><b>数据库</b>：关系数据库管理系统中的一个模式或数据库，文档存储，图数据库等，如 MySQL、Microsoft SQL Server、Oracle Database、MongoDB、Riak、Cassandra、Neo4j 等。</li>
+                    <li><b>Blob 或内容存储</b>：一个 Blob 存储（例如 Amazon S3、Microsoft Azure Blob Storage 等）或内容交付网络（例如 Akamai、Amazon CloudFront 等）。</li>
+                    <li><b>文件系统</b>：一个完整的本地文件系统或更大网络文件系统的一部分（例如 SAN、NAS 等）。</li>
+                    <li><b>Shell 脚本</b>：一个用 Bash 编写的单独 Shell 脚本等。</li>
+                    <li><b>等等</b></li>
                 </ul>
-
+        
                 <br />
-
-                <h3>Component</h3>
+        
+                <h3>组件</h3>
                 <p>
-                    The word "component" is a hugely overloaded term in the software development industry, but in this context a component is a grouping of related functionality encapsulated behind a well-defined interface.
-                    If you're using a language like Java or C#, the simplest way to think of a component is that it's a collection of implementation classes behind an interface. Aspects such as how those components are packaged (e.g. one component vs many components per JAR file, DLL, shared library, etc) is a separate and orthogonal concern.
+                    “组件” 这个词在软件开发行业中是一个过度使用的术语，但在此上下文中，组件是指封装在一个明确定义的接口后面的相关功能的集合。
+                    如果你使用像 Java 或 C# 这样的语言，最简单的理解组件的方式是，它是接口后面的实现类的集合。有关这些组件如何打包（例如，一个组件与每个 JAR 文件、DLL、共享库中的多个组件）的问题是一个独立且正交的关注点。
                 </p>
                 <p>
-                    An important point to note here is that all components inside a container typically execute in the same process space.
-                    <b>In the C4 model, components are not separately deployable units.</b>
+                    需要注意的一个重要点是，容器内的所有组件通常在同一个进程空间中执行。
+                    <b>在 C4 模型中，组件不是单独可部署的单元。</b>
                 </p>
             </div>
-        </div>
+        </div>        
 
         <div class="section">
             <div class="container">
                 <a name="SystemContextDiagram"></a>        
-                <h2>1. System Context diagram <a href="#SystemContextDiagram"><img src="https://c4model.com/img/glyphicons-basic-351-link.svg" class="glyphicon" alt="Link" /></a></h2>
+                <h2>1. 系统上下文图 <a href="#SystemContextDiagram"><img src="https://c4model.com/img/glyphicons-basic-351-link.svg" class="glyphicon" alt="链接" /></a></h2>
                 <div class="row">
                     <div class="col-sm-5 centered">
                         <p style="margin-top: 20px">
-                            <a href="https://static.structurizr.com/workspace/36141/diagrams/SystemContext.png"><img src="https://static.structurizr.com/workspace/36141/diagrams/SystemContext.png" alt="A System Context diagram" class="img-thumbnail" /></a>
+                            <a href="https://static.structurizr.com/workspace/36141/diagrams/SystemContext.png"><img src="https://static.structurizr.com/workspace/36141/diagrams/SystemContext.png" alt="系统上下文图" class="img-thumbnail" /></a>
                         </p>
                         <p class="centered">
-                            <a href="https://static.structurizr.com/workspace/36141/diagrams/SystemContext-key.png"><img src="https://static.structurizr.com/workspace/36141/diagrams/SystemContext-key.png" alt="Diagram key" class="img-thumbnail" style="width: 80%" /></a>                        
+                            <a href="https://static.structurizr.com/workspace/36141/diagrams/SystemContext-key.png"><img src="https://static.structurizr.com/workspace/36141/diagrams/SystemContext-key.png" alt="图例" class="img-thumbnail" style="width: 80%" /></a>                        
                         </p>
                     </div>
                     <div class="col-sm-7">
                         <p>
-                            A System Context diagram is a good starting point for diagramming and documenting a software system,
-                            allowing you to step back and see the big picture. Draw a diagram showing your system
-                            as a box in the centre, surrounded by its users and the other systems that it interacts with.
+                            系统上下文图是绘制和记录软件系统的一个很好的起点，它让你退后一步，看到大局。绘制一个图示，将你的系统显示为中央的一个框，周围是其用户和它互动的其他系统。
                         </p>
-
+        
                         <p>
-                            Detail isn't important here as this is your zoomed out view showing a big picture of the system landscape.
-                            The focus should be on people (actors, roles, personas, etc) and software systems rather than technologies,
-                            protocols and other low-level details. It's the sort of diagram that you could show to non-technical people.
+                            这里的细节不重要，因为这是你的缩小视图，展示了系统景观的大图。重点应放在人员（演员、角色、人物角色等）和软件系统上，而不是技术、协议和其他低级细节。这是一种你可以向非技术人员展示的图示。
                         </p>
-
+        
                         <p class="small">
-                            <b>Scope</b>: A single software system.
+                            <b>范围</b>: 一个单一的软件系统。
                         </p>
                         <p class="small">
-                            <b>Primary elements</b>: The software system in scope.
+                            <b>主要元素</b>: 范围内的软件系统。
                             <br />
-                            <b>Supporting elements</b>: People (e.g. users, actors, roles, or personas) and software systems (external dependencies) that are directly connected to the software system in scope. Typically these other software systems sit outside the scope or boundary of your own software system, and you don't have responsibility or ownership of them.
+                            <b>支持元素</b>: 直接连接到范围内的软件系统的人员（例如用户、演员、角色或人物角色）和软件系统（外部依赖）。通常这些其他软件系统位于你自己软件系统的范围或边界之外，你不负责或拥有它们。
                         </p>
                         <p class="small">
-                            <b>Intended audience</b>: Everybody, both technical and non-technical people, inside and outside of the software development team.
+                            <b>目标受众</b>: 所有人，包括技术人员和非技术人员，软件开发团队内外。
                         </p>
                         <p class="small">
-                            <b>Recommended for most teams</b>: Yes.
+                            <b>是否推荐给大多数团队</b>: 是。
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-
+       
         <div class="section">
             <div class="container">
                 <a name="ContainerDiagram"></a>        
-                <h2>2. Container diagram <a href="#ContainerDiagram"><img src="https://c4model.com/img/glyphicons-basic-351-link.svg" class="glyphicon" alt="Link" /></a></h2>
+                <h2>2. 容器图 <a href="#ContainerDiagram"><img src="https://c4model.com/img/glyphicons-basic-351-link.svg" class="glyphicon" alt="链接" /></a></h2>
                 <div class="row">
                     <div class="col-sm-5 centered">
                         <p style="margin-top: 20px">
-                            <a href="https://static.structurizr.com/workspace/36141/diagrams/Containers.png"><img src="https://static.structurizr.com/workspace/36141/diagrams/Containers.png" alt="A Container diagram" class="img-thumbnail" /></a>
+                            <a href="https://static.structurizr.com/workspace/36141/diagrams/Containers.png"><img src="https://static.structurizr.com/workspace/36141/diagrams/Containers.png" alt="容器图" class="img-thumbnail" /></a>
                         </p>
                         <p class="centered">
-                            <a href="https://static.structurizr.com/workspace/36141/diagrams/Containers-key.png"><img src="https://static.structurizr.com/workspace/36141/diagrams/Containers-key.png" alt="Diagram key" class="img-thumbnail" style="width: 80%" /></a>                        
+                            <a href="https://static.structurizr.com/workspace/36141/diagrams/Containers-key.png"><img src="https://static.structurizr.com/workspace/36141/diagrams/Containers-key.png" alt="图例" class="img-thumbnail" style="width: 80%" /></a>                        
                         </p>
                     </div>
                     <div class="col-sm-7">
                         <p>
-                            Once you understand how your system fits in to the overall IT environment, a really useful next step is to zoom-in to the system boundary with a Container diagram.
-                            A "container" is something like a server-side web application, single-page application, desktop application, mobile app, database schema, file system, etc.
-                            Essentially, a container is a separately runnable/deployable unit (e.g. a separate process space) that executes code or stores data.
+                            一旦你了解了你的系统如何融入整体 IT 环境，接下来的一个非常有用的步骤是通过容器图缩小到系统边界。
+                            “容器”是指像服务器端 web 应用程序、单页应用程序、桌面应用程序、移动应用、数据库模式、文件系统等。
+                            本质上，容器是一个独立的可运行/部署单元（例如，单独的进程空间），它执行代码或存储数据。
                         </p>
-
+        
                         <p>
-                            The Container diagram shows the high-level shape of the software architecture and how responsibilities
-                            are distributed across it. It also shows the major technology choices and how the containers communicate
-                            with one another. It's a simple, high-level technology focussed diagram that is useful for
-                            software developers and support/operations staff alike.
+                            容器图展示了软件架构的高层次结构，以及职责如何分布在其中。它还展示了主要的技术选择和容器之间的通信方式。这是一种简单的、高层次的技术聚焦图示，对软件开发人员和支持/运维人员都很有用。
                         </p>
-
+        
                         <p class="small">
-                            <b>Scope</b>: A single software system.
+                            <b>范围</b>: 单一的软件系统。
                         </p>
                         <p class="small">
-                            <b>Primary elements</b>: Containers within the software system in scope.
+                            <b>主要元素</b>: 范围内软件系统的容器。
                             <br />
-                            <b>Supporting elements</b>: People and software systems directly connected to the containers.
+                            <b>支持元素</b>: 直接连接到容器的人员和软件系统。
                         </p>
                         <p class="small">
-                            <b>Intended audience</b>: Technical people inside and outside of the software development team; including software architects, developers and operations/support staff.
+                            <b>目标受众</b>: 软件开发团队内外的技术人员，包括软件架构师、开发人员和运维/支持人员。
                         </p>
                         <p class="small">
-                            <b>Recommended for most teams</b>: Yes.
+                            <b>是否推荐给大多数团队</b>: 是。
                         </p>
                         <p class="small">
-                            <b>Notes</b>: This diagram says nothing about clustering, load balancers, replication, failover, etc because it will likely vary across different environments (e.g. production, staging, development, etc).
-                            This information is better captured via one or more <a href="#DeploymentDiagram">deployment diagrams</a>.
+                            <b>备注</b>: 此图未涉及集群、负载均衡器、复制、故障转移等，因为这些在不同环境（例如生产、预发布、开发等）中可能会有所不同。这些信息更适合通过一个或多个<a href="#DeploymentDiagram">部署图</a>来捕捉。
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-
+        
         <div class="section">
             <div class="container">
                 <a name="ComponentDiagram"></a>        
-                <h2>3. Component diagram <a href="#ComponentDiagram"><img src="https://c4model.com/img/glyphicons-basic-351-link.svg" class="glyphicon" alt="Link" /></a></h2>
+                <h2>3. 组件图 <a href="#ComponentDiagram"><img src="https://c4model.com/img/glyphicons-basic-351-link.svg" class="glyphicon" alt="链接" /></a></h2>
                 <div class="row">
                     <div class="col-sm-5 centered">
                         <p style="margin-top: 20px">
-                            <a href="https://static.structurizr.com/workspace/36141/diagrams/Components.png"><img src="https://static.structurizr.com/workspace/36141/diagrams/Components.png" alt="A Component diagram" class="img-thumbnail" /></a>
+                            <a href="https://static.structurizr.com/workspace/36141/diagrams/Components.png"><img src="https://static.structurizr.com/workspace/36141/diagrams/Components.png" alt="组件图" class="img-thumbnail" /></a>
                         </p>
                         <p class="centered">
-                            <a href="https://static.structurizr.com/workspace/36141/diagrams/Components-key.png"><img src="https://static.structurizr.com/workspace/36141/diagrams/Components-key.png" alt="Diagram key" class="img-thumbnail" style="width: 80%" /></a>                        
+                            <a href="https://static.structurizr.com/workspace/36141/diagrams/Components-key.png"><img src="https://static.structurizr.com/workspace/36141/diagrams/Components-key.png" alt="图例" class="img-thumbnail" style="width: 80%" /></a>                        
                         </p>    
                     </div>
                     <div class="col-sm-7">
                         <p>
-                            Next you can zoom in and decompose each container further to identify the major structural building blocks and their interactions.
+                            接下来，你可以进一步缩小并解构每个容器，以识别主要的结构构建块及其交互。
                         </p>
-
+        
                         <p>
-                            The Component diagram shows how a container is made up of a number of "components", what each of those
-                            components are, their responsibilities and the technology/implementation details.
+                            组件图展示了一个容器如何由多个“组件”组成，这些组件是什么、它们的职责以及技术/实现细节。
                         </p>
-
+        
                         <p class="small">
-                            <b>Scope</b>: A single container.
+                            <b>范围</b>: 单一容器。
                         </p>
                         <p class="small">
-                            <b>Primary elements</b>: Components within the container in scope.
+                            <b>主要元素</b>: 范围内容器中的组件。
                             <br />
-                            <b>Supporting elements</b>: Containers (within the software system in scope) plus people and software systems directly connected to the components.
+                            <b>支持元素</b>: 组件直接连接的容器（在软件系统范围内），以及人员和软件系统。
                         </p>
                         <p class="small">
-                            <b>Intended audience</b>: Software architects and developers.
+                            <b>目标受众</b>: 软件架构师和开发人员。
                         </p>
                         <p class="small">
-                            <b>Recommended for most teams</b>: No, only create component diagrams if you feel they add value, and consider automating their creation for long-lived documentation.
+                            <b>是否推荐给大多数团队</b>: 否，仅在你觉得它们能带来价值时创建组件图，并考虑为长期文档化自动生成它们。
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-
+        
         <div class="section">
             <div class="container">
                 <a name="CodeDiagram"></a>        
-                <h2>4. Code diagram<a href="#CodeDiagram"><img src="https://c4model.com/img/glyphicons-basic-351-link.svg" class="glyphicon" alt="Link" /></a></h2>
+                <h2>4. 代码图 <a href="#CodeDiagram"><img src="https://c4model.com/img/glyphicons-basic-351-link.svg" class="glyphicon" alt="链接" /></a></h2>
                 <div class="row">
                     <div class="col-sm-5 centered">
                         <p style="margin-top: 20px">
-                            <a href="https://c4model.com/img/class-diagram.png"><img src="https://c4model.com/img/class-diagram.png" alt="A UML class diagram" class="img-thumbnail" /></a>
+                            <a href="https://c4model.com/img/class-diagram.png"><img src="https://c4model.com/img/class-diagram.png" alt="UML 类图" class="img-thumbnail" /></a>
                         </p>
                         <p class="centered">
                         </p>    
                     </div>
                     <div class="col-sm-7">
                         <p>
-                            Finally, you can zoom in to each component to show how it is implemented as code; using UML class diagrams, entity relationship diagrams or similar.
+                            最后，你可以深入到每个组件，展示它是如何以代码实现的；使用 UML 类图、实体关系图或类似工具。
                         </p>
-
+        
                         <p>
-                            This is an optional level of detail and is often available on-demand from tooling such as IDEs.
-                            Ideally this diagram would be automatically generated using tooling (e.g. an IDE or UML modelling tool), and you should consider showing only those attributes and methods that allow you to tell the story that you want to tell.
-                            This level of detail is not recommended for anything but the most important or complex components.
+                            这是一个可选的细节级别，通常可以通过 IDE 等工具按需获得。理想情况下，这种图示应通过工具（例如 IDE 或 UML 建模工具）自动生成，并且你应考虑仅显示那些能够讲述你想讲的故事的属性和方法。这个细节级别不推荐用于除最重要或复杂组件之外的任何内容。
                         </p>
-
+        
                         <p class="small">
-                            <b>Scope</b>: A single component.
+                            <b>范围</b>: 单一组件。
                         </p>
                         <p class="small">
-                            <b>Primary elements</b>: Code elements (e.g. classes, interfaces, objects, functions, database tables, etc) within the component in scope.
+                            <b>主要元素</b>: 组件中范围内的代码元素（例如类、接口、对象、函数、数据库表等）。
                         </p>
                         <p class="small">
-                            <b>Intended audience</b>: Software architects and developers.
+                            <b>目标受众</b>: 软件架构师和开发人员。
                         </p>
                         <p class="small">
-                            <b>Recommended for most teams</b>: No, particularly for long-lived documentation because most IDEs can generate this level of detail on demand.
+                            <b>是否推荐给大多数团队</b>: 否，特别是对于长期文档，因为大多数 IDE 可以按需生成这种细节。
                         </p>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>        
 
         <div class="section">
             <div class="container">
                 <a name="SystemLandscapeDiagram"></a>        
-                <h2>System Landscape diagram <a href="#SystemLandscapeDiagram"><img src="https://c4model.com/img/glyphicons-basic-351-link.svg" class="glyphicon" alt="Link" /></a></h2>
+                <h2>系统景观图 <a href="#SystemLandscapeDiagram"><img src="https://c4model.com/img/glyphicons-basic-351-link.svg" class="glyphicon" alt="链接" /></a></h2>
                 <div class="row">
                     <div class="col-sm-5 centered">
                         <p style="margin-top: 20px">
-                            <a href="https://static.structurizr.com/workspace/28201/diagrams/SystemLandscape.png"><img src="https://static.structurizr.com/workspace/28201/diagrams/SystemLandscape.png" alt="A System Landscape diagram" class="img-thumbnail" /></a>
+                            <a href="https://static.structurizr.com/workspace/28201/diagrams/SystemLandscape.png"><img src="https://static.structurizr.com/workspace/28201/diagrams/SystemLandscape.png" alt="系统景观图" class="img-thumbnail" /></a>
                         </p>
                         <p class="centered">
-                            <a href="https://static.structurizr.com/workspace/28201/diagrams/SystemLandscape-key.png"><img src="https://static.structurizr.com/workspace/28201/diagrams/SystemLandscape-key.png" alt="Diagram key" class="img-thumbnail" style="width: 80%" /></a>                        
+                            <a href="https://static.structurizr.com/workspace/28201/diagrams/SystemLandscape-key.png"><img src="https://static.structurizr.com/workspace/28201/diagrams/SystemLandscape-key.png" alt="图例" class="img-thumbnail" style="width: 80%" /></a>                        
                         </p>    
                     </div>
                     <div class="col-sm-7">
                         <p>
-                            The C4 model provides a static view of a <b>single software system</b> but, in the real-world, software systems never live in isolation.
-                            For this reason, and particularly if you are responsible for a collection/portfolio of software systems,
-                            it's often useful to understand how all of these software systems fit together within a given enterprise, organisation, department, etc.
-                            Essentially this is a map of the software systems within the chosen scope,
-                            with a C4 drill-down for each software system of interest.
+                            C4 模型提供了一个 <b>单一软件系统</b> 的静态视图，但在现实世界中，软件系统从不孤立存在。
+                            因此，特别是当你负责一个软件系统集合/组合时，了解这些软件系统在特定企业、组织、部门等中的互相配合通常是非常有用的。
+                            本质上，这是一张在所选范围内的软件系统地图，
+                            每个感兴趣的软件系统都有一个 C4 级别的详细图示。
                         </p>
                         <p>
-                            From a practical perspective, a system landscape diagram is really just a system context diagram without a specific focus on a particular software system.
+                            从实际角度来看，系统景观图实际上就是一个系统上下文图，但没有针对特定软件系统的特定焦点。
                         </p>
-
+        
                         <p class="small">
-                            <b>Scope</b>: An enterprise/organisation/department/etc.
-                        </p>
-                        <p class="small">
-                            <b>Primary elements</b>: People and software systems related to the chosen scope.
+                            <b>范围</b>: 一个企业/组织/部门等。
                         </p>
                         <p class="small">
-                            <b>Intended audience</b>: Technical and non-technical people, inside and outside of the software development team.
+                            <b>主要元素</b>: 与所选范围相关的人员和软件系统。
+                        </p>
+                        <p class="small">
+                            <b>目标受众</b>: 技术人员和非技术人员，软件开发团队内部和外部。
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-
+        
         <div class="section">
             <div class="container">
                 <a name="DynamicDiagram"></a>        
-                <h2>Dynamic diagram <a href="#DynamicDiagram"><img src="https://c4model.com/img/glyphicons-basic-351-link.svg" class="glyphicon" alt="Link" /></a></h2>
+                <h2>动态图 <a href="#DynamicDiagram"><img src="https://c4model.com/img/glyphicons-basic-351-link.svg" class="glyphicon" alt="链接" /></a></h2>
                 <div class="row">
                     <div class="col-sm-5 centered">
                         <p style="margin-top: 20px">
-                            <a href="https://static.structurizr.com/workspace/36141/diagrams/SignIn.png"><img src="https://static.structurizr.com/workspace/36141/diagrams/SignIn.png" alt="A dynamic diagram" class="img-thumbnail" /></a>
+                            <a href="https://static.structurizr.com/workspace/36141/diagrams/SignIn.png"><img src="https://static.structurizr.com/workspace/36141/diagrams/SignIn.png" alt="动态图" class="img-thumbnail" /></a>
                         </p>
                         <p class="centered">
-                            <a href="https://static.structurizr.com/workspace/36141/diagrams/SignIn-key.png"><img src="https://static.structurizr.com/workspace/36141/diagrams/SignIn-key.png" alt="Diagram key" class="img-thumbnail" style="width: 80%" /></a>                        
+                            <a href="https://static.structurizr.com/workspace/36141/diagrams/SignIn-key.png"><img src="https://static.structurizr.com/workspace/36141/diagrams/SignIn-key.png" alt="图例" class="img-thumbnail" style="width: 80%" /></a>                        
                         </p>    
                     </div>
                     <div class="col-sm-7">
                         <p>
-                            A dynamic diagram can be useful when you want to show how elements in the static model collaborate at runtime to implement a user story, use case, feature, etc.
-                            This dynamic diagram is based upon a <a href="https://en.wikipedia.org/wiki/Communication_diagram">UML communication diagram</a>
-                            (previously known as a "UML collaboration diagram"). It is similar to a <a href="https://en.wikipedia.org/wiki/Sequence_diagram">UML sequence diagram</a>
-                            although it allows a free-form arrangement of diagram elements with numbered interactions to indicate ordering.
+                            动态图可以用于展示静态模型中的元素如何在运行时协作来实现用户故事、用例、功能等。
+                            该动态图基于<a href="https://en.wikipedia.org/wiki/Communication_diagram">UML 通信图</a>
+                            （之前称为“UML 协作图”）。它类似于<a href="https://en.wikipedia.org/wiki/Sequence_diagram">UML 时序图</a>
+                            ，但允许以自由形式排列图示元素，并用编号的交互来指示顺序。
                         </p>
-
+        
                         <p class="small">
-                            <b>Scope</b>: A particular feature, story, use case, etc.
-                        </p>
-                        <p class="small">
-                            <b>Primary and supporting elements</b>: Your choice - you can show software systems, containers, or components interacting at runtime.
+                            <b>范围</b>: 特定功能、故事、用例等。
                         </p>
                         <p class="small">
-                            <b>Intended audience</b>: Technical and non-technical people, inside and outside of the software development team.
+                            <b>主要和支持元素</b>: 你可以选择 - 你可以展示运行时的软件系统、容器或组件的交互。
                         </p>
                         <p class="small">
-                            <b>Notes</b>: Feel free to use a UML sequence diagram if you prefer that visual style.
+                            <b>目标受众</b>: 技术人员和非技术人员，软件开发团队内部和外部。
+                        </p>
+                        <p class="small">
+                            <b>备注</b>: 如果你更喜欢 UML 时序图的视觉风格，也可以使用它。
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-
+        
         <div class="section">
             <div class="container">
                 <a name="DeploymentDiagram"></a>        
-                <h2>Deployment diagram <a href="#DeploymentDiagram"><img src="https://c4model.com/img/glyphicons-basic-351-link.svg" class="glyphicon" alt="Link" /></a></h2>
+                <h2>部署图 <a href="#DeploymentDiagram"><img src="https://c4model.com/img/glyphicons-basic-351-link.svg" class="glyphicon" alt="链接" /></a></h2>
                 <div class="row">
                     <div class="col-sm-5 centered">
                         <p style="margin-top: 20px">
-                            <a href="https://static.structurizr.com/workspace/36141/diagrams/LiveDeployment.png"><img src="https://static.structurizr.com/workspace/36141/diagrams/LiveDeployment.png" alt="A deployment diagram" class="img-thumbnail" /></a>
+                            <a href="https://static.structurizr.com/workspace/36141/diagrams/LiveDeployment.png"><img src="https://static.structurizr.com/workspace/36141/diagrams/LiveDeployment.png" alt="部署图" class="img-thumbnail" /></a>
                         </p>
                         <p class="centered">
-                            <a href="https://static.structurizr.com/workspace/36141/diagrams/LiveDeployment-key.png"><img src="https://static.structurizr.com/workspace/36141/diagrams/LiveDeployment-key.png" alt="Diagram key" class="img-thumbnail" style="width: 80%" /></a>                        
+                            <a href="https://static.structurizr.com/workspace/36141/diagrams/LiveDeployment-key.png"><img src="https://static.structurizr.com/workspace/36141/diagrams/LiveDeployment-key.png" alt="图例" class="img-thumbnail" style="width: 80%" /></a>                        
                         </p>    
                         <p style="margin-top: 20px">
-                            <a href="https://static.structurizr.com/workspace/54915/diagrams/AmazonWebServicesDeployment.png" target="_blank"><img src="https://static.structurizr.com/workspace/54915/diagrams/AmazonWebServicesDeployment.png" alt="An example AWS deployment diagram" class="img-thumbnail" /></a>
+                            <a href="https://static.structurizr.com/workspace/54915/diagrams/AmazonWebServicesDeployment.png" target="_blank"><img src="https://static.structurizr.com/workspace/54915/diagrams/AmazonWebServicesDeployment.png" alt="AWS 部署图示例" class="img-thumbnail" /></a>
                         </p>
                     </div>
                     <div class="col-sm-7">
                         <p>
-                            A deployment diagram allows you to illustrate how instances of software systems and/or containers in the static model are deployed on to the infrastructure within a given <b>deployment environment</b>
-                            (e.g. production, staging, development, etc).
-                            It's based upon a <a href="https://en.wikipedia.org/wiki/Deployment_diagram">UML deployment diagram</a>.
+                            部署图允许你展示静态模型中的软件系统和/或容器实例如何部署到特定的<b>部署环境</b>
+                            （例如生产、预发布、开发等）中的基础设施上。
+                            它基于<a href="https://en.wikipedia.org/wiki/Deployment_diagram">UML 部署图</a>。
                         </p>
-
+        
                         <p>
-                            A <b>deployment node</b> represents where an instance of a software system/container is running;
-                            perhaps physical infrastructure (e.g. a physical server or device),
-                            virtualised infrastructure (e.g. IaaS, PaaS, a virtual machine),
-                            containerised infrastructure (e.g. a Docker container),
-                            an execution environment (e.g. a database server, Java EE web/application server, Microsoft IIS), etc.
-                            Deployment nodes can be nested.
+                            <b>部署节点</b> 代表了软件系统/容器实例运行的位置；
+                            可能是物理基础设施（例如物理服务器或设备），
+                            虚拟化基础设施（例如 IaaS、PaaS、虚拟机），
+                            容器化基础设施（例如 Docker 容器），
+                            执行环境（例如数据库服务器、Java EE Web/应用程序服务器、Microsoft IIS）等。
+                            部署节点可以嵌套。
                         </p>
-
+        
                         <p>
-                            You may also want to include <b>infrastructure nodes</b> such as DNS services, load balancers, firewalls, etc.
+                            你还可能需要包括如 DNS 服务、负载均衡器、防火墙等<b>基础设施节点</b>。
                         </p>
-
+        
                         <p>
-                            Feel free to use icons provided by Amazon Web Services, Azure, etc to complement your deployment diagrams
-                            ... just make sure any icons you use are included in your diagram key/legend.
+                            随意使用 Amazon Web Services、Azure 等提供的图标来补充你的部署图
+                            … 只需确保你使用的任何图标都包含在你的图例中。
                         </p>
-
+        
                         <p class="small">
-                            <b>Scope</b>: One or more software systems within a single deployment environment (e.g. production, staging, development, etc).
+                            <b>范围</b>: 一个或多个软件系统在单一部署环境中的（例如生产、预发布、开发等）。
                         </p>
                         <p class="small">
-                            <b>Primary elements</b>: Deployment nodes, software system instances, and container instances.
+                            <b>主要元素</b>: 部署节点、软件系统实例和容器实例。
                             <br />
-                            <b>Supporting elements</b>: Infrastructure nodes used in the deployment of the software system.
+                            <b>支持元素</b>: 用于软件系统部署的基础设施节点。
                         </p>
                         <p class="small">
-                            <b>Intended audience</b>: Technical people inside and outside of the software development team; including software architects, developers, infrastructure architects, and operations/support staff.
+                            <b>目标受众</b>: 软件架构师、开发人员、基础设施架构师和运维/支持人员等技术人员。
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-
+        
         <div class="section">
             <div class="container">
                 <a name="Notation"></a>
-                <h2>Notation</h2>
+                <h2>记号</h2>
                 <p>
-                    The C4 model is <b>notation independent</b>, and doesn't prescribe any particular notation.
-                    As a starting point though, a simple notation that works well on whiteboards, paper, sticky notes, index cards and a variety of diagraming tools is as follows.
+                    C4 模型是 <b>与记号无关</b> 的，并不规定任何特定的记号。不过，作为起点，一个在白板、纸张、便签、索引卡和各种绘图工具上都适用的简单记号如下所示。
                 </p>
-
+        
                 <div class="row">
                     <div class="col-sm-1">
                     </div>
                     <div class="col-sm-2">
                         <a href="https://c4model.com/img/notation-person.png"><img src="https://c4model.com/img/notation-person.png" alt="Person" class="img-thumbnail" /></a>
                         <p class="caption">
-                            Person
+                            人员
                         </p>
                     </div>
                     <div class="col-sm-2">
                         <a href="https://c4model.com/img/notation-software-system.png"><img src="https://c4model.com/img/notation-software-system.png" alt="Software System" class="img-thumbnail" /></a>
                         <p class="caption">
-                            Software System
+                            软件系统
                         </p>
                     </div>
                     <div class="col-sm-2">
                         <a href="https://c4model.com/img/notation-container.png"><img src="https://c4model.com/img/notation-container.png" alt="Container" class="img-thumbnail" /></a>
                         <p class="caption">
-                            Container
+                            容器
                         </p>
                     </div>
                     <div class="col-sm-2">
                         <a href="https://c4model.com/img/notation-component.png"><img src="https://c4model.com/img/notation-component.png" alt="Component" class="img-thumbnail" /></a>
                         <p class="caption">
-                            Component
+                            组件
                         </p>
                     </div>
                     <div class="col-sm-2">
                         <a href="https://c4model.com/img/notation-relationship.png"><img src="https://c4model.com/img/notation-relationship.png" alt="Relationship" class="img-thumbnail" /></a>
                         <p class="caption">
-                            Relationship
+                            关系
                         </p>
                     </div>
                     <div class="col-sm-1">
                     </div>
                 </div>
-
+        
                 <p>
-                    You can then use colour and shapes to supplement the diagram, either to add additional information or simply to make the diagram more aesthetically pleasing.
+                    然后，您可以使用颜色和形状来补充图示，既可以添加额外的信息，也可以使图示更加美观。
                 </p>
-
-                <h3>C4 and UML</h3>
+        
+                <h3>C4 与 UML</h3>
                 <p>
-                    Although the example diagrams above are created using a "boxes and lines" notation,
-                    the core diagrams can be illustrated using UML with the appropriate use of packages, components and stereotypes. The resulting UML diagrams do tend to lack the same degree of descriptive text though, because adding such text isn't possible (or easy) with some UML tools.
+                    虽然上面的示例图使用了“框和线”的记号，但核心图示也可以使用 UML 来表示，采用适当的包、组件和立场。结果 UML 图确实缺乏相同程度的描述性文本，因为有些 UML 工具无法（或不容易）添加这些文本。
                 </p>
                 <p>
-                    Here are three examples of a System Context, Container and Component diagram for comparison.
+                    以下是系统上下文图、容器图和组件图的三个示例以供比较。
                 </p>
-
+        
                 <div class="row">
                     <div class="col-sm-4">
                         <a href="https://c4model.com/img/spring-petclinic-system-context.png"><img src="https://c4model.com/img/spring-petclinic-system-context.png" alt="A system context diagram" class="img-thumbnail grayscale" /></a>
@@ -672,19 +654,19 @@
                         <a href="https://c4model.com/img/spring-petclinic-components.png"><img src="https://c4model.com/img/spring-petclinic-components.png" alt="A component diagram" class="img-thumbnail grayscale" /></a>
                     </div>
                 </div>
-
+        
                 <div class="row">
                     <div class="col-sm-4 centered small">
-                        System Context diagram
+                        系统上下文图
                     </div>
                     <div class="col-sm-4 centered small">
-                        Container diagram
+                        容器图
                     </div>
                     <div class="col-sm-4 centered small">
-                        Component diagram
+                        组件图
                     </div>
                 </div>
-
+        
                 <div class="row">
                     <div class="col-sm-4">
                         <a href="https://c4model.com/img/spring-petclinic-system-context-plantuml.png"><img src="https://c4model.com/img/spring-petclinic-system-context-plantuml.png" alt="A system context diagram" class="img-thumbnail grayscale" /></a>
@@ -696,7 +678,7 @@
                         <a href="https://c4model.com/img/spring-petclinic-components-plantuml.png"><img src="https://c4model.com/img/spring-petclinic-components-plantuml.png" alt="A component diagram" class="img-thumbnail grayscale" /></a>
                     </div>
                 </div>
-
+        
                 <div class="row">
                     <div class="col-sm-4">
                         <a href="https://c4model.com/img/spring-petclinic-system-context-staruml.png"><img src="https://c4model.com/img/spring-petclinic-system-context-staruml.png" alt="A system context diagram" class="img-thumbnail grayscale" /></a>
@@ -708,71 +690,64 @@
                         <a href="https://c4model.com/img/spring-petclinic-components-staruml.png"><img src="https://c4model.com/img/spring-petclinic-components-staruml.png" alt="A component diagram" class="img-thumbnail grayscale" /></a>
                     </div>
                 </div>
-
-                <h3>C4 and ArchiMate</h3>
-
+        
+                <h3>C4 与 ArchiMate</h3>
+        
                 <p>
-                    See <a href="https://www.archimatetool.com/blog/2020/04/18/c4-model-architecture-viewpoint-and-archi-4-7/">C4 Model, Architecture Viewpoint and Archi 4.7</a> for details of how to create C4 model diagrams with ArchiMate.
+                    有关如何使用 ArchiMate 创建 C4 模型图的详细信息，请参见 <a href="https://www.archimatetool.com/blog/2020/04/18/c4-model-architecture-viewpoint-and-archi-4-7/">C4 模型、架构视角和 Archi 4.7</a>。
                 </p>
-
+        
                 <br /><br />
-
-                <h3>Diagram key/legend</h3>
+        
+                <h3>图示关键/图例</h3>
                 <p>
-                    Any notation used should be as self-describing as possible, but <b>all diagrams should have a key/legend</b> to make the notation explicit.
-                    This applies to diagrams created with notations such as UML, ArchiMate and SysML too, as not everybody will know the notation being used.
+                    任何使用的记号应尽可能自解释，但 <b>所有图示应有一个关键/图例</b> 以明确记号的含义。这也适用于使用 UML、ArchiMate 和 SysML 等记号创建的图示，因为并非所有人都了解所使用的记号。
                 </p>
-
+        
                 <p class="centered">
                     <a href="https://static.structurizr.com/workspace/36141/diagrams/Containers-key.png"><img src="https://static.structurizr.com/workspace/36141/diagrams/Containers-key.png" alt="Diagram key" class="img-thumbnail" style="width: 80%" /></a>                        
                 </p>
-
+        
                 <br /><br />
-
-                <h3>Notation, notation, notation</h3>
+        
+                <h3>记号、记号、记号</h3>
                 <p>
-                    Although the C4 model is an abstraction-first approach and notation independent, you still need to ensure that your diagram notation makes sense,
-                    and that the diagrams are comprehensible.
-                    A good way to think about this is to ask yourself whether each diagram can stand alone, and be (mostly) understood without a narrative.
-                    You can use this short <a href="review">software architecture diagram review checklist</a> to help.
-                    And here are some recommendations related to notation.
+                    尽管 C4 模型是一个以抽象为优先的方法，并且与记号无关，但您仍需要确保图示记号有意义，并且图示是易于理解的。一种很好的思考方式是问自己每个图示是否可以独立存在，并且在没有叙述的情况下（大致上）能被理解。您可以使用这个简短的 <a href="review">软件架构图示审查清单</a> 来帮助自己。以下是一些与记号相关的建议。
                 </p>                        
-
+        
                 <div class="row">
                     <div class="col-sm-4">
-                        <h4>Diagrams</h4>
+                        <h4>图示</h4>
                         <ul style="line-height: 150%">
-                            <li>Every diagram should have a title describing the diagram type and scope (e.g. "System Context diagram for My Software System").</li>
-                            <li>Every diagram should have a key/legend explaining the notation being used (e.g. shapes, colours, border styles, line types, arrow heads, etc).</li>
-                            <li>Acronyms and abbreviations (business/domain or technology) should be understandable by all audiences, or explained in the diagram key/legend.</li>
+                            <li>每个图示应有一个标题，描述图示类型和范围（例如，“我的软件系统的系统上下文图”）。</li>
+                            <li>每个图示应有一个关键/图例，解释所使用的记号（例如，形状、颜色、边框样式、线条类型、箭头等）。</li>
+                            <li>缩略语和简称（业务/领域或技术）应为所有受众所理解，或在图示关键/图例中进行解释。</li>
                         </ul>
                     </div>
                     <div class="col-sm-4">
-                        <h4>Elements</h4>
+                        <h4>元素</h4>
                         <ul style="line-height: 150%">
-                            <li>The type of every element should be explicitly specified (e.g. Person, Software System, Container or Component).</li>
-                            <li>Every element should have a short description, to provide an "at a glance" view of key responsibilities.</li>
-                            <li>Every container and component should have a technology explicitly specified.</li>
+                            <li>每个元素的类型应明确指定（例如，人员、软件系统、容器或组件）。</li>
+                            <li>每个元素应有简短的描述，以提供关键责任的“一目了然”的视图。</li>
+                            <li>每个容器和组件应明确指定技术。</li>
                         </ul>
                     </div>
                     <div class="col-sm-4">
-                        <h4>Relationships</h4>
+                        <h4>关系</h4>
                         <ul style="line-height: 150%">
-                            <li>Every line should represent a unidirectional relationship.</li>
-                            <li>Every line should be labelled, the label being consistent with the direction and intent of the relationship (e.g. dependency or data flow). Try to be as specific as possible with the label, ideally avoiding single words like, "Uses".</li>
-                            <li>Relationships between containers (typically these represent inter-process communication) should have a technology/protocol explicitly labelled.</li>
+                            <li>每条线应表示单向关系。</li>
+                            <li>每条线应标记，标签应与关系的方向和意图一致（例如，依赖关系或数据流）。尽量具体，避免使用像“使用”这样的单一词汇。</li>
+                            <li>容器之间的关系（通常代表进程间通信）应明确标记技术/协议。</li>
                         </ul>
                     </div>
                 </div>
-
+        
                 <br /><br />
-
+        
                 <a name="AlternativeVisualisations"></a>
-                <h3>Alternative visualisations</h3>
+                <h3>替代可视化</h3>
                 <p>
-                    Finally, don't feel that you need to always use a traditional "boxes and arrows" diagram.
-                    Although this is usually the default approach, there are other, often interactive, visualisations
-                    that can be used to show the same C4 model abstractions in very different ways.
+                    最后，不要觉得必须始终使用传统的“框和箭头”图示。尽管这是通常的默认方法，但还有其他往往是交互式的可视化方式，可以用来以非常不同的方式展示相同的 C4 模型抽象。
                 </p>
                 <div class="row">
                     <div class="col-sm-4 centered">
@@ -780,7 +755,7 @@
                             <a href="https://structurizr.com/dsl?example=microservices" target="_blank"><img src="https://c4model.com/img/alternative-1.png" class="img-thumbnail"  /></a>
                         </p>
                         <p class="smaller">
-                            Traditional "boxes and arrows" diagrams are the default approach for documentation and presentations.
+                            传统的“框和箭头”图示是文档和演示的默认方法。
                         </p>
                     </div>
                     <div class="col-sm-4 centered">
@@ -788,8 +763,7 @@
                             <a href="https://structurizr.com/dsl?example=microservices&renderer=graph" target="_blank"><img src="https://c4model.com/img/alternative-2.png" class="img-thumbnail"  /></a>
                         </p>
                         <p class="smaller">
-                            A D3.js force-directed graph is a very concise way to visualise larger software architectures,
-                            also providing an easy way to explore dependencies.
+                            D3.js 力导向图是一种非常简洁的方式来可视化较大的软件架构，也提供了方便的方式来探索依赖关系。
                         </p>
                     </div>
                     <div class="col-sm-4 centered">
@@ -797,34 +771,23 @@
                             <a href="https://structurizr.com/dsl?example=microservices&renderer=ilograph" target="_blank"><img src="https://c4model.com/img/alternative-3.png" class="img-thumbnail"  /></a>
                         </p>
                         <p class="smaller">
-                            Ilograph's interactive diagrams provide a way to selectively zoom in and out,
-                            allowing you to explore your entire software architecture model.
+                            Ilograph 的交互式图示提供了一种选择性缩放的方式，使您可以探索整个软件架构模型。
                         </p>
                     </div>
                 </div>                
             </div>
         </div>
-
+        
         <div class="section">
             <div class="container">
                 <a name="Tooling"></a>
-                <h2>Tooling</h2>
+                <h2>工具</h2>
                 <p>
-                    For design sessions, you might find a whiteboard or flip chart paper better for collaboration, and iterating quickly.
-                    For long-lived documentation, there are a number of tools can help create software architecture diagrams based upon the C4 model.
+                    对于设计会议，您可能会发现白板或翻页纸更适合协作和快速迭代。对于长期文档，有许多工具可以帮助基于 C4 模型创建软件架构图。
                 </p>
-
+        
                 <p>
-                    Don't forget to ask yourself some questions when looking at tooling, to understand the features you need.
-                    Who are the diagram authors, and how technical are they?
-                    A "drag and drop" UI vs "diagrams as code"?
-                    Data stored in git next to your source code vs stored in the tool/cloud service?
-                    Closed vs open data format?
-                    Interactive vs static diagrams?
-                    Free vs paid vs open source?
-                    Short-lived vs long-lived documentation?
-                    Team only diagramming vs enterprise-wide modelling?
-                    Who is the diagram audience, and how would they access the diagrams/documentation?
+                    在选择工具时，请不要忘记问自己一些问题，以了解您需要的功能。图示的作者是谁，他们的技术水平如何？使用“拖放”界面还是“代码即图示”？数据是存储在与源代码相邻的 git 中，还是存储在工具/云服务中？封闭格式还是开放格式？互动图示还是静态图示？免费、付费还是开源？短期文档还是长期文档？仅团队图示还是企业范围的建模？图示的受众是谁，他们如何访问图示/文档？
                 </p>
 
                 <br />
@@ -832,50 +795,51 @@
                 <div class="row centered">
                     <div class="col-sm-4">
                         <div class="toolingOptionFilter">
-                            <label><input id="toolingStaticDiagramsFilter" type="checkbox" checked="checked"> Static diagrams</label>
-                            <div class="smaller">(e.g. system context, container, and component diagrams)</div>
+                            <label><input id="toolingStaticDiagramsFilter" type="checkbox" checked="checked"> 静态图示</label>
+                            <div class="smaller">(例如：系统上下文图、容器图和组件图)</div>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="toolingOptionFilter">
-                            <label><input id="toolingDynamicDiagramsFilter" type="checkbox"> Dynamic diagrams</label>
-                            <div class="smaller">(e.g. collaboration or sequence diagrams)</div>
+                            <label><input id="toolingDynamicDiagramsFilter" type="checkbox"> 动态图示</label>
+                            <div class="smaller">(例如：协作图或序列图)</div>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="toolingOptionFilter">
-                            <label><input id="toolingDeploymentDiagramsFilter" type="checkbox"> Deployment diagrams</label>
-                            <div class="smaller">(e.g. diagrams showing deployment and infrastructure concerns)</div>
+                            <label><input id="toolingDeploymentDiagramsFilter" type="checkbox"> 部署图示</label>
+                            <div class="smaller">(例如：显示部署和基础设施问题的图示)</div>
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="row centered">
                     <div class="col-sm-4">
                         <div class="toolingOptionFilter">
-                            <label><input id="toolingOpenSourceFilter" type="checkbox"> Open source</label>
-                            <div class="smaller">(free, fork/customize, etc)</div>
+                            <label><input id="toolingOpenSourceFilter" type="checkbox"> 开源</label>
+                            <div class="smaller">(免费，支持分叉/定制等)</div>
                         </div>
-
+                
                         <div class="toolingOptionFilter">
-                            <label><input id="toolingAsCodeFilter" type="checkbox"> Diagrams and models as code</label>
-                            <div class="smaller">(for easy version control and integration into build pipelines/other tools)</div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="toolingOptionFilter">
-                            <label><input id="toolingModelBasedFilter" type="checkbox" checked="checked"> Reuse elements across multiple diagrams</label>
-                            <div class="smaller">(to keep multiple diagrams in sync automatically when you rename elements)</div>
-                            <div class="label smaller" style="font-weight: normal; background: #08427B;">Recommended</div>
+                            <label><input id="toolingAsCodeFilter" type="checkbox"> 图示和模型作为代码</label>
+                            <div class="smaller">(便于版本控制和集成到构建管道/其他工具中)</div>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="toolingOptionFilter">
-                            <label><input id="toolingRenderingToolIndependentFilter" type="checkbox"> Rendering tool independent</label>
-                            <div class="smaller">(to render diagrams with different tools or visualisation formats such as <a href="#AlternativeVisualisations">diagrams, graphs, etc</a>)</div>
+                            <label><input id="toolingModelBasedFilter" type="checkbox" checked="checked"> 在多个图示中重用元素</label>
+                            <div class="smaller">(当重命名元素时自动保持多个图示同步)</div>
+                            <div class="label smaller" style="font-weight: normal; background: #08427B;">推荐</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="toolingOptionFilter">
+                            <label><input id="toolingRenderingToolIndependentFilter" type="checkbox"> 渲染工具独立</label>
+                            <div class="smaller">(支持使用不同的工具或可视化格式（例如<a href="#AlternativeVisualisations">图示、图表等</a>）渲染图示)</div>
                         </div>
                     </div>
                 </div>
+                
 
                 <div class="centered">
                     <div class="toolingOption toolingOpenSource toolingModelBased toolingStaticDiagrams toolingDynamicDiagrams toolingDeploymentDiagrams">
@@ -1031,293 +995,142 @@
         <div class="section">
             <div class="container small">
                 <a name="FAQ"></a>
-                <h2>Frequently asked questions</h2>
-
+                <h2>常见问题解答</h2>
+        
                 <div class="row">
                     <div class="col-sm-4">
-                        <h4>What's the background behind the C4 model?</h4>
+                        <h4>C4 模型的背景是什么？</h4>
                         <p>
-                            The C4 model was created by <a href="http://simonbrown.je">Simon Brown</a>, who started teaching software architecture,
-                            while working as a software developer/architect. Part of Simon's training course was a design exercise, where groups of people
-                            were given some requirements, asked to do some design, and to draw some diagrams to express that design.
+                            C4 模型由 <a href="http://simonbrown.je">Simon Brown</a> 创建，他在担任软件开发者/架构师期间开始教授软件架构。Simon 的培训课程的一部分是一个设计练习，参与者被给予一些需求，要求进行设计，并绘制图示来表达设计。
                         </p>
                         <p>
-                            Although this was a design focussed exercise, the wide variety of diagrams made it evident that the visualisation of ideas was a skill that most people sorely lacked.
-                            The C4 model is essentially a formalisation of how Simon used to visualise software architecture, which has evolved over the years.   
+                            尽管这是一个以设计为重点的练习，但各种不同的图示显示出大多数人缺乏可视化思想的技能。C4 模型本质上是 Simon 过去用来可视化软件架构的一个形式化表达，经过多年的演变而来。
                         </p>
                         <p>
-                            Exact dates are hard to pin down, but the roots of the C4 model can be traced back to somewhere in the region of 2006-2009,
-                            the diagram types ("context", "containers", "components", "classes") were named in early 2010, with the 
-                            "C4" name being first used in early 2011.
-                            The fourth diagram type was renamed from "classes" to "code" during 2015-2016.
+                            精确的时间难以确定，但 C4 模型的根源可以追溯到 2006-2009 年左右，图示类型（“上下文”、“容器”、“组件”、“代码”）在 2010 年初命名，"C4" 名称首次使用是在 2011 年初。第四种图示类型在 2015-2016 年期间从“类”重命名为“代码”。
                         </p>
                     </div>
                     <div class="col-sm-4">
-                        <h4>What's the inspiration behind the C4 model?</h4>
+                        <h4>C4 模型的灵感来源是什么？</h4>
                         <p>
-                            The C4 model was created during a time where teams, influenced by the agile movement, were less than enthusiastic about using
-                            the <a href="https://en.wikipedia.org/wiki/Unified_Modeling_Language">Unified Modeling Language</a> (UML) to document software architecture,
-                            if they were creating diagrams at all.
-                            Despite this, the C4 model was inspired by UML and the
-                            <a href="https://en.wikipedia.org/wiki/4%2B1_architectural_view_model">4+1 model for software architecture</a>.
-                            In summary, you can think of the C4 model as a simplified version of the underlying concepts, designed to
-                            (1) make it easier for software developers to describe and understand how a software system works and
-                            (2) to minimise the gap between the software architecture model/description and the source code.
+                            C4 模型是在一个受敏捷运动影响的时期创建的，那时团队对使用 <a href="https://en.wikipedia.org/wiki/Unified_Modeling_Language">统一建模语言</a> (UML) 来记录软件架构并不热衷，甚至不创建图示。尽管如此，C4 模型的灵感来自于 UML 和 <a href="https://en.wikipedia.org/wiki/4%2B1_architectural_view_model">4+1 软件架构模型</a>。
+                            总的来说，您可以把 C4 模型看作是这些基本概念的简化版本，旨在 (1) 使软件开发人员更容易描述和理解软件系统的工作原理，(2) 减少软件架构模型/描述与源代码之间的差距。
                         </p>
                     </div>
                     <div class="col-sm-4">
-                        <h4>Isn't the C4 model a step backwards? Why are you reinventing UML? Why not just use UML?</h4>
+                        <h4>C4 模型不是倒退吗？为什么要重新发明 UML？为什么不直接使用 UML？</h4>
                         <p>
-                            Whether you see the C4 model as a step forwards or a step backwards depends upon where you are.
-                            If you're using UML (or SysML, ArchiMate, etc) and it's working for you, stick with it.
-                            Unfortunately, UML usage seems to be in decline, and many teams have reverted to using ad hoc boxes and lines diagrams once again.
-                            Given that many of those teams don't want to use UML (for various reasons), the C4 model helps introduce some structure and discipline into the way software architecture is communicated.
-                            For many teams, the C4 model is sufficient. And for others, perhaps it's a stepping stone to UML.
+                            您是否认为 C4 模型是前进还是倒退，取决于您所在的位置。如果您正在使用 UML（或 SysML、ArchiMate 等）并且效果良好，那就继续使用。不幸的是，UML 的使用似乎在下降，许多团队再次退回到使用临时的框图。
+                            鉴于许多团队不想使用 UML（出于各种原因），C4 模型有助于将一些结构和规范引入到软件架构的沟通方式中。对于许多团队来说，C4 模型已经足够了。而对于其他人，也许它是通向 UML 的一个跳板。
                         </p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-4">
-                        <h4>How many people use the C4 model?</h4>
+                        <h4>有多少人使用 C4 模型？</h4>
                         <p>
-                            The honest answer is that nobody knows. Simon has personally taught the C4 model to somewhere over 10,000 people in more than 30 countries;
-                            with conference talks, videos, books and articles reaching many more than this.
-                            Other people are also teaching, speaking and writing about the C4 model too.
-                            It's definitely being used though, in organisations ranging from startups to global household names.
+                            说实话，没有人知道。Simon 已经亲自教授了超过 10,000 人在 30 多个国家的 C4 模型；会议讲座、视频、书籍和文章也触及了更多的人。其他人也在教授、演讲和撰写关于 C4 模型的内容。
+                            不过，它确实在使用中，从初创公司到全球知名企业都有涉及。
                         </p>
                     </div>
                     <div class="col-sm-4">
-                        <h4>Why "container"?</h4>
+                        <h4>为什么使用“容器”这个词？</h4>
                         <p>
-                            Terms like "process", "application", "app", "server", "deployable unit", etc all have associated implications,
-                            so the name "container" was chosen as a generic way to describe something in which components live.
-                            From one perspective, it's unfortunate that containerisation has become popular, because many software developers now associate the term "container" with Docker.
-                            From another perspective though, there is sometimes a nice parity between a container in the C4 model and an infrastructure (e.g. Docker) container.
+                            像“进程”、“应用”、“服务器”、“可部署单元”等术语都有相应的含义，因此选择了“容器”作为描述组件所在的通用术语。从某种角度来看，容器化的流行使得许多软件开发人员将“容器”一词与 Docker 联系在一起，这是不幸的。
+                            从另一个角度来看，C4 模型中的容器与基础设施（例如 Docker）容器之间有时有很好的对等关系。
                         </p>
                         <p>
-                            While many teams successfully use the C4 model as is, feel free to change the terminology if needed.
+                            虽然许多团队成功地使用 C4 模型，但如果需要，您可以随意修改术语。
                         </p>
                     </div>
                     <div class="col-sm-4">
-                        <h4>Can we change the terminology?</h4>
+                        <h4>我们可以更改术语吗？</h4>
                         <p>
-                            This terminology (context, containers, components and code) works for many organisations and many types of software.
-                            However, sometimes an organisation will have an existing terminology that people are already familiar with.
-                            Or perhaps "components" and "classes" don't easily map on to the technology being used (e.g. functional languages often use the terms "module" and "function").
+                            这种术语（上下文、容器、组件和代码）对许多组织和各种类型的软件有效。然而，有时一个组织会有现有的术语，人们已经熟悉了。
+                            或者“组件”和“类”可能与使用的技术不容易映射（例如，函数式语言通常使用术语“模块”和“函数”）。
                         </p>
                         <p>
-                            Feel free to modify the terminology that you use to describe software architecture at different levels of abstraction.
-                            Just make sure that everybody explicitly understands it.
+                            您可以修改描述软件架构的术语，以适应不同的抽象级别。只要确保大家明确理解即可。
                         </p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-4">
-                        <h4>How do you model microservices and serverless?</h4>
+                        <h4>如何建模微服务和无服务器架构？</h4>
                         <p>
-                            Broadly speaking, there are two options for diagramming microservices when using the C4 model, although it depends what you mean by "microservice".
+                            广义上说，当使用 C4 模型来绘制微服务时，有两个选项，尽管这取决于您对“微服务”的定义。
                         </p>
-
+        
                         <p>
-                            <b>Approach 1: Each "microservice" is owned by a separate team</b>
+                            <b>方法 1: 每个“微服务”由一个独立团队拥有</b>
                             <br />
-                            If your software system has a dependency upon a number of microservices that are outside of your control (e.g. they are owned and/or operated by a separate team), model these microservices as external software systems, that you can't see inside of.
+                            如果您的软件系统依赖于一些在您控制之外的微服务（例如，它们由不同的团队拥有和/或运营），将这些微服务建模为外部软件系统，您无法内部查看。
                         </p>
-
+        
                         <p>
-                            <b>Approach 2: A single team owns multiple "microservices"</b>
+                            <b>方法 2: 单个团队拥有多个“微服务”</b>
                         </p>
-                            Imagine that you have an API app (e.g. Spring Boot, ASP.NET MVC, etc) that reads/writes to a relational database schema.
-                            Regardless of whether you consider the term "microservice" to refer to just the API app, or the combination of the API app and database schema ...
-                            if the microservices are a part of a software system that you are building (i.e. you own them), model every deployable thing as a container.
-                            In other words, you'd show two containers: the API app, and the database schema.
-                            Feel free to draw a box around these two containers to indicate they are related/grouped.
+                            想象您有一个 API 应用（例如 Spring Boot、ASP.NET MVC 等），读取/写入关系数据库模式。不论您认为“微服务”一词指的是仅 API 应用，还是 API 应用和数据库模式的组合……
+                            如果这些微服务是您构建的软件系统的一部分（即您拥有它们），则将每个可部署的东西建模为一个容器。
+                            换句话说，您将展示两个容器：API 应用和数据库模式。可以在这两个容器周围画一个框，表示它们是相关/分组的。
                         </p>
-
+        
                         <p>
-                            The same is true for serverless functions/lambdas/etc; treat them as software systems or containers based upon ownership.
+                            无服务器函数/ Lambdas 等也是如此；根据所有权将它们视为软件系统或容器。
                         </p>
                     </div>
                     <div class="col-sm-4">
-                        <h4>How do you diagram large and complex software systems?</h4>
+                        <h4>如何绘制大型和复杂的软件系统？</h4>
                         <p>
-                            Even with a relatively small software system, it's tempting to try and include the entire story on a single diagram. For example, if you have a web application, it seems logical to create a single component diagram that shows all of the components that make up that web application. Unless your software system really is that small, you're likely to run out of room on the diagram canvas or find it difficult to discover a layout that isn't cluttered by a myriad of overlapping lines. Using a larger diagram canvas can sometimes help, but large diagrams are usually hard to interpret and comprehend because the cognitive load is too high. And if nobody understands the diagram, nobody is going to look at it.
+                            即使对于相对较小的软件系统，也很容易尝试将整个故事包含在一个单一的图示中。例如，如果您有一个 Web 应用程序，似乎合乎逻辑的是创建一个组件图，显示构成该 Web 应用程序的所有组件。除非您的软件系统确实如此小，否则您可能会发现图示画布上的空间不足，或者难以发现不会被大量重叠线条困扰的布局。使用更大的图示画布有时可以有所帮助，但大型图示通常难以解释和理解，因为认知负担太重。如果没有人理解图示，那么也没有人会查看它。
                         </p>
                         <p>
-                            Instead, don't be afraid to split that single complex diagram into a larger number of simpler diagrams, each with a specific focus around a business area, functional area, functional grouping, bounded context, use case, user interaction, feature set, etc. The key is to ensure that each of the separate diagrams tells a different part of the same overall story, at the same level of abstraction.
-                            You can also use an <a href="#AlternativeVisualisations">alternative visualisation</a>.
+                            相反，不要害怕将那个单一的复杂图示分解为更多的简单图示，每个图示专注于一个特定的业务区域、功能区域、功能分组、界限上下文、用例、用户交互、功能集等。关键是确保每个单独的图示讲述相同总体故事的不同部分，并保持相同的抽象级别。
+                            您还可以使用 <a href="#AlternativeVisualisations">替代可视化</a>。
                         </p>
                     </div>
                     <div class="col-sm-4">
-                        <h4>Will the diagrams become outdated quickly?</h4>
+                        <h4>图示会很快过时吗？</h4>
                         <p>
-                            Due to the hierarchical nature of the C4 model, each diagram will change at a different rate.
+                            由于 C4 模型的层级性质，每个图示会以不同的速度变化。
                         </p>
                         
                         <ul>
-                            <li><b>System Context diagram</b>: In most cases, the system context diagram will change very slowly, as this describes the landscape that the software system is operating within.</li>
-                            <li><b>Container diagram</b>: Unless you're building a software system that makes heavy use of microservices or serverless lambdas/functions/etc, the container diagram will also change relatively slowly.</li>
-                            <li><b>Component diagram</b>: For any software system under active development, the component diagrams may change frequently as the team adds, removes or restructures the code into cohesive components. Automating the generation of this level of detail with tooling can help.</li>
-                            <li><b>Code diagram</b>: The level 4 code (e.g. class) diagrams will potentially become outdated very quickly if the codebase is under active development. For this reason, the recommendation is to (1) not create them at all or (2) generate them on-demand using tooling such as your IDE.</li>
+                            <li><b>系统上下文图</b>: 在大多数情况下，系统上下文图变化非常缓慢，因为它描述了软件系统所处的环境。</li>
+                            <li><b>容器图</b>: 除非您正在构建一个大量使用微服务或无服务器函数的系统，否则容器图也会变化缓慢，因为它描述了主要的可部署单元。</li>
+                            <li><b>组件图</b>: 组件图通常会变化得比前两个更快，因为它描述了容器内部的结构。</li>
+                            <li><b>代码图</b>: 代码图通常变化得最快，因为它描述了容器内部的类、接口等。代码图的变化是最频繁的。</li>
                         </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <h4>Why doesn't the C4 model cover business processes, workflows, state machines, domain models, data models, etc?</h4>
                         <p>
-                            The focus of the C4 model is the static structures that make up a software system, at different levels of abstraction.
-                            If you need to describe other aspects, feel free to supplement the C4 diagrams with UML diagrams, BPML diagrams, ArchiMate diagrams, entity relationship diagrams, etc.
-                        </p>
-                    </div>                            
-                    <div class="col-sm-4">
-                        <h4>The C4 model vs UML, ArchiMate and SysML?</h4>
-                        <p>
-                            Although existing notations such as UML, ArchiMate and SysML already exist, many software development teams don't seem to use them.
-                            Often this is because teams don't know these notations well enough, perceive them to be too complicated, think they are not compatible with agile approaches or don't have the required tooling.
-                        </p>
-
-                        <p>
-                            If you are already successfully using one of these notations to communicate software architecture and it's working, stick with it. If not, try the C4 model.
-                            And don't be afraid to supplement the C4 diagrams with UML state diagrams, timing diagrams, etc if you need to.
-                        </p>
-                    </div>
-                    <div class="col-sm-4">
-                        <h4>Can we combine C4 and arc42?</h4>
-                        <p>
-                            Yes, many teams do, and the C4 model is compatible with the <a href="http://arc42.org">arc42 documentation template</a> as follows.
-                        </p>
-
-                        <ul>
-                          <li>Context and Scope =&gt; System Context diagram</li>
-                          <li>Building Block View (level 1) =&gt; Container diagram</li>
-                          <li>Building Block View (level 2) =&gt; Component diagram</li>
-                          <li>Building Block View (level 3) =&gt; Code (e.g. class) diagram</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <h4>Does the C4 model imply a design process or team structure?</h4>
-                        <p>
-                            A common misconception is that a team's design process should follow the levels in the C4 model hierarchy, perhaps with different people on the team being responsible for different levels of diagrams.
-                            For example, a business analyst creates the system context diagram, the architect creates the container diagram, while the developers look after the remaining levels of detail.
-                        </p>
-                        <p>
-                            Although you can certainly use the C4 model in this way, this is not the intended or recommended usage pattern.
-                            The C4 model is just a way to describe a software system, from different levels of abstraction, and it implies nothing about the process of delivering software.
-                        </p>
-                    </div>
-                    <div class="col-sm-4">
-                        <h4>Using C4 to describe libraries, frameworks and SDKs?</h4>
-                        <p>
-                            The C4 model is really designed to model a software system, at various levels of abstraction.
-                            To document a library, framework or SDK, you might be better off using something like UML.
-                            Alternatively, you could use the C4 model to describe a usage example of your framework, library or SDK; perhaps using colour coding to signify which parts of the software system are bespoke vs those provided for you. 
-                        </p>
-                    </div>
-                    <div class="col-sm-4">
-                        <h4>Web applications; one container or two?</h4>
-                        <p>
-                            If you're building a server-side web application (e.g. Spring MVC, ASP.NET, Ruby on Rails, Django, etc) that is predominantly generating static HTML content, then that's a single container.
-                            If there's a significant quantity of JavaScript being delivered by the server-side web application (e.g. a single-page application built using Angular), then that's two containers.
-                            <a href="https://static.structurizr.com/workspace/36141/diagrams/Containers.png">Here's an example</a>.
-                        </p>
-                        <p>
-                            Although, at deployment time, the server-side web application includes both the server-side and client-side code, treating the client and server as two separate containers makes it explicit that these are two separate process spaces, communicating via an inter-process/remote communication mechanism (e.g. JSON/HTTPS).
-                            It also provides a basis for zooming in to each container separately to show the components inside them.
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <h4>Should the lines represent dependencies or data flow?</h4>
-                        <p>
-                            This is your choice. Sometimes diagrams work better showing dependency relationships (e.g. uses, reads from, etc),
-                            and sometimes data flow (e.g. customer update events) works better. Whichever you choose, make sure that the description of the line matches the direction of the arrow.
-                        </p>
-                        <p>
-                            It's also worth remembering that most relationships can be expressed either way, and the more explicit you can be, the better.
-                            For example, describing a relationship as "sends customer update events to" can be more descriptive than simply "customer update events".
-                        </p>
-                    </div>                            
-                    <div class="col-sm-4">
-                        <h4>Is a Java JAR, C# assembly, DLL, module, etc a container?</h4>
-                        <p>
-                            Typically not.
-                            A container is a runtime construct, like an application; whereas Java JAR files, C# assemblies, DLLs, modules, etc are used to organise the code within those applications.
-                        </p>
-                    </div>
-                    <div class="col-sm-4">
-                        <h4>Is a Java JAR, C# assembly, DLL, module, package, namespace, folder etc a component?</h4>
-                        <p>
-                            Perhaps but, again, typically not.
-                            The C4 model is about showing the runtime units (containers) and how functionality is partitioned across them (components), rather than organisational units such as Java JAR files, C# assemblies, DLLs, modules, packages, namespaces or folder structures. 
-                        </p>
-                        <p>
-                            Of course, there may be a one-to-one mapping between these constructs and a component; e.g. if you're building a hexagonal architecture, you may create a single Java JAR file or C# assembly per component.
-                            On the other hand, a single component might be implemented using code from a number of JAR files, which is typically what happens when you start to consider third-party frameworks/libraries, and how they become embedded in your codebase.
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <h4>Should you include message buses, API gateways, service meshes, etc?</h4>
-                        <p>
-                            If you have two services, A and B, that communicate by sending a message via a message bus (irrespective of topics, queues, p2p, pub/sub, etc) or another intermediary (e.g. an API gateway or service mesh), you have a couple of options.
-                            The first option is to show service A sending a message to the intermediary, and the intermediary subsequently forwarding that message to service B.
-                            While accurate, the "hub and spoke" nature of the diagram tends to obscure the notion that there's coupling between the message producer and consumer.
-                        </p>
-                        <p>
-                            The other approach is to omit the intermediary, and instead use notation (e.g. a textual description, colour coding, line style, etc) to signify that the interaction between service A and B happens via an intermediary.
-                            This approach tends to result in diagrams that tell a clearer story.
-                        </p>
-                    </div>                            
-                    <div class="col-sm-4">
-                        <h4>Should data storage services be shown as software systems or containers?</h4>
-                        <p>
-                            A frequently asked question is whether services like Amazon S3, Amazon RDS, Azure SQL Database, content delivery networks, etc should be shown as software systems or containers. After all, these are external services that most of us don't own or run ourselves.
-                        </p>
-                        <p>
-                            If you're building a software system that is using Amazon S3 for storing data, it's true that you don't run S3 yourself, but you do have ownership and responsibility for the buckets you are using. Similarly with Amazon RDS, you have (more or less) complete control over any database schemas that you create. For this reason, treat them as containers because they are an integral part of your software architecture, although they are hosted elsewhere.
-                        </p>
-                    </div>
-                    <div class="col-sm-4">
-                        <h4>Is the C4 model universally applicable?</h4>
-                        <p>
-                            The C4 model was designed to help describe, document, and diagram custom-built, bespoke software systems.
-                            From this perspective, the C4 model can be used to describe a variety of software architectures (monolithic or distributed), built in a variety of programming languages, deployed on a variety of platforms (on-premises or cloud).
-                        </p>
-                        <p>
-                            Solutions that are perhaps less suited to the C4 model include embedded systems/firmware, and solutions that rely on heavy customization rather than bespoke development (e.g. SAP and Salesforce).
-                            Even with these solutions, you still may find the System Context and Container diagrams useful.
+                            如果图示随着时间推移而变化不大，那么您应该在长期保存图示，以减少维护的精力。
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-
+        
         <div class="section">
             <div class="container">
                 <a name="MoreInformation"></a>
-                <h2>More information</h2>
+                <h2>更多信息</h2>
                 <p>
-                    The following resources are recommended if you're looking for more information about
-                    visualising software architecture and the C4 model.
+                    如果您想了解更多关于可视化软件架构和 C4 模型的信息，以下资源是推荐的。
                 </p>
-
+        
                 <div class="row">
                     <div class="col-sm-2 centered">
                     </div>
                     <div class="col-sm-4 centered">
                         <p>
-                            <a href="https://leanpub.com/visualising-software-architecture"><img src="https://c4model.com/img/book.png" alt="The C4 model for visualising software architecture" class="img-thumbnail" /></a>
+                            <a href="https://leanpub.com/visualising-software-architecture">
+                                <img src="https://c4model.com/img/book.png" alt="The C4 model for visualising software architecture" class="img-thumbnail" />
+                            </a>
                         </p>
-
+        
                         <p class="small">
-                            This is Simon Brown's <a href="https://leanpub.com/visualising-software-architecture">The C4 model for visualising software architecture</a> ebook,
-                            which is available to purchase from Leanpub as an ebook in PDF, EPUB and MOBI formats.
-                            It's a short guide to visualising your software architecture with the C4 model.
+                            这是 Simon Brown 的 <a href="https://leanpub.com/visualising-software-architecture">《The C4 model for visualising software architecture》</a> 电子书，
+                            可从 Leanpub 购买，格式包括 PDF、EPUB 和 MOBI。
+                            这是一本简短的指南，讲述如何使用 C4 模型可视化您的软件架构。
                         </p>
                     </div>
                     <div class="col-sm-4 centered">
@@ -1325,65 +1138,67 @@
                             <iframe src="https://www.youtube.com/embed/x2-rSnhpw0g" frameborder="0" allowfullscreen></iframe>
                         </p>
                         <p style="font-size: 11px">
-                            <b>Visualising software architecture with the C4 model</b>
+                            <b>使用 C4 模型可视化软件架构</b>
                             <br />
-                            Agile on the Beach 2019 - Falmouth, England - July 2019
+                            Agile on the Beach 2019 - 英国法尔茅斯 - 2019年7月
                         </p>
-
+        
                         <p class="embed-responsive embed-responsive-16by9 centered img-thumbnail">
                             <iframe src="https://www.youtube.com/embed/0-gVFWONnQw" frameborder="0" allowfullscreen></iframe>
                         </p>
                         <p style="font-size: 11px">
-                            <b>Diagrams as code 2.0</b>
+                            <b>作为代码的图示 2.0</b>
                             <br />
-                            JBCNConf - Barcelona, Spain - July 2022
+                            JBCNConf - 西班牙巴塞罗那 - 2022年7月
                         </p>
                     </div>
                     <div class="col-sm-2 centered">
                     </div>
-                </div>    
-
+                </div>
+        
                 <div class="small">
                     <p>
-                        And here are some of the significant resources that reference the C4 model:
+                        以下是一些提到 C4 模型的重要资源：
                     </p>
-
+        
                     <ul>
-                        <li><a href="https://www.infoq.com/articles/C4-architecture-model" target="_blank" class="small">InfoQ: The C4 model for software architecture</a></li>
+                        <li><a href="https://www.infoq.com/articles/C4-architecture-model" target="_blank" class="small">InfoQ: C4 模型软件架构</a></li>
                         <li><a href="https://www.infoq.com/br/articles/C4-architecture-model" target="_blank" class="small">InfoQ: O modelo C4 de documentação para Arquitetura de Software</a></li>
-                        <li><a href="https://www.infoq.com/cn/articles/C4-architecture-model" target="_blank" class="small">InfoQ: 用于软件架构的C4模型</a></li>
+                        <li><a href="https://www.infoq.com/cn/articles/C4-architecture-model" target="_blank" class="small">InfoQ: 用于软件架构的 C4 模型</a></li>
                         <li><a href="https://www.infoq.com/jp/articles/C4-architecture-model" target="_blank" class="small">InfoQ: ソフトウェアアーキテクチャのためのC4モデル</a></li>
-                        <li><a href="https://engineering.atspotify.com/2022/07/software-visualization-challenge-accepted/" target="_blank">Spotify Engineering: Software Visualization - Challenge, Accepted</a></li>
-                        <li><a href="https://www.theengineeringleader.com/1946930/10648894-a-moment-on-c4-architectural-design-with-amar-mehan" target="_blank">The Engineering Leader: A Moment on C4 Architectural Design with Amar Mehan</a></li>
-                        <li><a href="https://publications.opengroup.org/c208" target="_blank">Open Agile Architecture™, a Standard of The Open Group</a></li>
-                        <li><a href="https://publications.opengroup.org/g20e" target="_blank">Agile Architecture Modeling using the ArchiMate® Language</a></li>
-                        <li><a href="https://www.oreilly.com/library/view/fundamentals-of-software/9781492043447/" target="_blank">Fundamentals of Software Architecture</a> <span class="small">(Mark Richards, Neal Ford)</span></li>
-                        <li><a href="https://pragprog.com/titles/mkdsa/design-it/" target="_blank">Design It!</a> <span class="small">(Michael Keeling)</span></li>
-                        <li><a href="https://www.packtpub.com/free-ebook/software-architecture-with-spring-5-0/9781788992992" target="_blank">Software Architecture with Spring 5.0</a> <span class="small">(René Enríquez, Alberto Salazar)</span></li>
-                        <li><a href="https://leanpub.com/software-architecture" target="_blank">Software Architecture</a> <span class="small">(Cesare Pautasso)</span></li>
-                        <li><a href="https://martinfowler.com/articles/building-infrastructure-platform.html#CommunicateYourTechnicalVision" target="_blank">Martin Fowler: Building Infrastructure Platforms - Communicate your technical vision</a> <span class="small">(Poppy Rowse and Chris Shepherd)</span></li>
-                        <li><a href="https://en.wikipedia.org/wiki/C4_model" target="_blank">Wikipedia</a></li>
+                        <li><a href="https://engineering.atspotify.com/2022/07/software-visualization-challenge-accepted/" target="_blank">Spotify Engineering: 软件可视化 - 挑战，接受</a></li>
+                        <li><a href="https://www.theengineeringleader.com/1946930/10648894-a-moment-on-c4-architectural-design-with-amar-mehan" target="_blank">The Engineering Leader: 关于 C4 架构设计的片刻与 Amar Mehan</a></li>
+                        <li><a href="https://publications.opengroup.org/c208" target="_blank">Open Agile Architecture™，The Open Group 的标准</a></li>
+                        <li><a href="https://publications.opengroup.org/g20e" target="_blank">使用 ArchiMate® 语言进行敏捷架构建模</a></li>
+                        <li><a href="https://www.oreilly.com/library/view/fundamentals-of-software/9781492043447/" target="_blank">软件架构基础</a> <span class="small">(Mark Richards, Neal Ford)</span></li>
+                        <li><a href="https://pragprog.com/titles/mkdsa/design-it/" target="_blank">设计它！</a> <span class="small">(Michael Keeling)</span></li>
+                        <li><a href="https://www.packtpub.com/free-ebook/software-architecture-with-spring-5-0/9781788992992" target="_blank">Spring 5.0 软件架构</a> <span class="small">(René Enríquez, Alberto Salazar)</span></li>
+                        <li><a href="https://leanpub.com/software-architecture" target="_blank">软件架构</a> <span class="small">(Cesare Pautasso)</span></li>
+                        <li><a href="https://martinfowler.com/articles/building-infrastructure-platform.html#CommunicateYourTechnicalVision" target="_blank">Martin Fowler: 建设基础设施平台 - 传达您的技术愿景</a> <span class="small">(Poppy Rowse 和 Chris Shepherd)</span></li>
+                        <li><a href="https://en.wikipedia.org/wiki/C4_model" target="_blank">维基百科</a></li>
                     </ul>
-
+        
                     <p>
-                        The Structurizr DSL (designed to support the C4 model) has also appeared on the <a href="https://www.thoughtworks.com/radar/techniques/diagrams-as-code" target="_blank">ThoughtWorks Tech Radar - Techniques - Diagrams as code</a>.
+                        旨在支持 C4 模型的 Structurizr DSL 也出现在 <a href="https://www.thoughtworks.com/radar/techniques/diagrams-as-code" target="_blank">ThoughtWorks 技术雷达 - 技术 - 作为代码的图示</a> 上。
                     </p>
                 </div>
             </div>
         </div>
-
+        
         <div id="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4">
-                        <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0; margin-bottom: 10px;" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+                        <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+                            <img alt="Creative Commons License" style="border-width:0; margin-bottom: 10px;" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+                        </a>
                         <br />
-                        This website and example diagrams are licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.
+                        本网站及示例图表采用 <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a> 进行许可。
                     </div>
                     <div class="col-sm-4">
                         <img src="https://c4model.com/img/simonbrown.jpg" width="40px" alt="Simon Brown" class="img-circle" style="margin-bottom: 10px;" />
                         <br />
-                        The C4 model and this website were created by Simon Brown
+                        C4 模型及本网站由 Simon Brown 创建
                         -
                         <a href="https://twitter.com/simonbrown" target="_blank">@simonbrown</a>
                         |
@@ -1392,16 +1207,16 @@
                     <div class="col-sm-4">
                         <img src="https://c4model.com/img/structurizr.png" width="140px" alt="Structurizr" style="margin-bottom: 10px;" />
                         <br />
-                        The example diagrams were created with Structurizr
+                        示例图表由 Structurizr 创建
                         -
-                        <a href="https://structurizr.com" target="_blank">About</a> 
+                        <a href="https://structurizr.com" target="_blank">关于</a>
                         |
-                        <a href="https://structurizr.com/dsl?example=big-bank-plc" target="_blank">Diagram source</a>    
+                        <a href="https://structurizr.com/dsl?example=big-bank-plc" target="_blank">图表来源</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        
 
     <script>
         var workspaceIds = [ 36141, 76748, 76749 ];
